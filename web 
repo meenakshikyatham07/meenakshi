@@ -45,7 +45,7 @@
             padding: 25px;
             margin-bottom: 25px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
         h2 {
@@ -131,6 +131,23 @@
             font-weight: bold;
         }
 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background: #123b63;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
         footer {
             text-align: center;
             padding: 25px;
@@ -143,7 +160,7 @@
 
 <header>
     <h1>Web Vulnerability Demo</h1>
-    <p>Cyber Security Educational Project</p>
+    <p>Cyber Security Virtual Internship Project</p>
 </header>
 
 
@@ -155,15 +172,25 @@
         <h2>1. Authentication Concepts</h2>
 
         <p>
-            This section demonstrates a simple login process and
-            authentication checks.
+            This section demonstrates a simple login process
+            and authentication checks.
         </p>
 
         <label>Username</label>
-        <input type="text" id="username" placeholder="Enter username">
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+        >
 
         <label>Password</label>
-        <input type="password" id="password" placeholder="Enter password">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+        >
 
         <button onclick="login()">Login</button>
 
@@ -189,7 +216,9 @@
             placeholder="Example: student123"
         >
 
-        <button onclick="validateInput()">Validate Input</button>
+        <button onclick="validateInput()">
+            Validate Input
+        </button>
 
         <div id="validationResult" class="result"></div>
 
@@ -202,24 +231,34 @@
         <h2>3. Security Checks</h2>
 
         <div class="feature">
+
             <h3>Authentication Check</h3>
+
             <p>
                 Checks whether the user has successfully logged in.
             </p>
+
             <span id="authStatus" class="status">
                 Not authenticated
             </span>
+
         </div>
 
+
         <div class="feature">
+
             <h3>Input Validation Check</h3>
+
             <p>
                 Checks whether user input follows the expected format.
             </p>
+
             <span id="inputStatus" class="status">
                 Not checked
             </span>
+
         </div>
+
 
         <button onclick="runSecurityChecks()">
             Run Security Checks
@@ -236,8 +275,8 @@
         <h2>4. Security Logging</h2>
 
         <p>
-            Security events can be recorded to help identify
-            suspicious or incorrect activities.
+            Security events are recorded to help identify
+            incorrect or suspicious activities.
         </p>
 
         <div id="logs" class="log-box">
@@ -247,47 +286,66 @@
     </div>
 
 
-    <!-- AWARENESS -->
+    <!-- SECURITY AWARENESS -->
     <div class="card">
 
         <h2>5. Security Awareness</h2>
 
         <div class="feature">
-            <strong>Use strong passwords</strong>
+
+            <strong>Use Strong Passwords</strong>
+
             <p>
                 Use long passwords and avoid easily guessed information.
             </p>
+
         </div>
 
+
         <div class="feature">
-            <strong>Validate user input</strong>
+
+            <strong>Validate User Input</strong>
+
             <p>
                 Applications should not blindly trust data entered by users.
             </p>
+
         </div>
 
+
         <div class="feature">
-            <strong>Protect authentication</strong>
+
+            <strong>Protect Authentication</strong>
+
             <p>
                 Authentication systems should verify users before
                 providing access to protected resources.
             </p>
+
         </div>
 
+
         <div class="feature">
-            <strong>Keep security logs</strong>
+
+            <strong>Keep Security Logs</strong>
+
             <p>
                 Logs can help developers identify unusual activity
                 and troubleshoot security problems.
             </p>
+
         </div>
 
+
         <div class="feature">
-            <strong>Test only authorized systems</strong>
+
+            <strong>Test Only Authorized Systems</strong>
+
             <p>
                 Security testing should be performed only on systems
                 where you have permission.
             </p>
+
         </div>
 
     </div>
@@ -299,13 +357,21 @@
         <h2>6. Project Workflow</h2>
 
         <ol>
+
             <li>User opens the web application.</li>
+
             <li>User enters login information.</li>
+
             <li>The application validates the input.</li>
+
             <li>Authentication status is checked.</li>
+
             <li>Security checks are performed.</li>
+
             <li>Important events are added to the security log.</li>
-            <li>The application displays security awareness information.</li>
+
+            <li>Security awareness information is displayed.</li>
+
         </ol>
 
     </div>
@@ -316,9 +382,12 @@
 
         <h2>7. Testing</h2>
 
-        <p>Test the application using the following cases:</p>
+        <p>
+            Test the application using the following test cases:
+        </p>
 
-        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <table>
+
             <tr>
                 <th>Test Case</th>
                 <th>Expected Result</th>
@@ -348,20 +417,43 @@
                 <td>Run security checks</td>
                 <td>Security status displayed</td>
             </tr>
+
         </table>
 
     </div>
 
 
-    <!-- PROJECT OUTCOME -->
+    <!-- PROJECT SUBMISSION -->
     <div class="card">
 
-        <h2>8. Expected Outcome</h2>
+        <h2>8. Project Submission</h2>
 
         <p>
-            The project demonstrates basic web security concepts including
-            authentication, input validation, security checks, logging,
-            and security awareness through an interactive web application.
+            This project demonstrates basic web security concepts
+            through an interactive web application.
+        </p>
+
+        <ul>
+
+            <li>Authentication concepts</li>
+
+            <li>Input validation</li>
+
+            <li>Security checks</li>
+
+            <li>Security logging</li>
+
+            <li>Security awareness</li>
+
+            <li>Documented workflow</li>
+
+            <li>Testing and validation</li>
+
+        </ul>
+
+        <p>
+            The completed project can be submitted as a
+            Web Vulnerability Demo for the virtual internship.
         </p>
 
     </div>
@@ -370,17 +462,21 @@
 
 
 <footer>
-    Web Vulnerability Demo | Cyber Security Virtual Internship
+
+    Web Vulnerability Demo |
+    Cyber Security Virtual Internship
+
 </footer>
 
 
 <script>
 
     let authenticated = false;
+
     let inputValidated = false;
 
 
-    // Add event to security log
+    // Security Logging
     function addLog(message) {
 
         const logs = document.getElementById("logs");
@@ -388,7 +484,9 @@
         const time = new Date().toLocaleTimeString();
 
         if (logs.innerText === "No events recorded yet.") {
+
             logs.innerText = "";
+
         }
 
         logs.innerText +=
@@ -412,51 +510,66 @@
         if (username === "" || password === "") {
 
             result.style.display = "block";
+
             result.className = "result error";
+
             result.innerText =
                 "Username and password are required.";
 
             authenticated = false;
 
-            addLog("Failed login attempt: empty credentials.");
+            addLog(
+                "Failed login attempt: empty credentials."
+            );
 
             return;
         }
 
 
-        // Demo credentials only
-        if (username === "student" && password === "Student@123") {
+        // Demo credentials
+        if (
+            username === "student" &&
+            password === "Student@123"
+        ) {
 
             authenticated = true;
 
             result.style.display = "block";
+
             result.className = "result success";
+
             result.innerText =
                 "Login successful. Authentication completed.";
 
             document.getElementById("authStatus").innerText =
                 "Authenticated";
 
-            addLog("Successful login for demo user.");
+            addLog(
+                "Successful login for demo user."
+            );
 
         } else {
 
             authenticated = false;
 
             result.style.display = "block";
+
             result.className = "result error";
+
             result.innerText =
                 "Invalid username or password.";
 
             document.getElementById("authStatus").innerText =
                 "Not authenticated";
 
-            addLog("Failed login attempt.");
+            addLog(
+                "Failed login attempt."
+            );
         }
     }
 
 
-    // Input validation
+    // Input Validation
     function validateInput() {
 
         const username =
@@ -471,21 +584,26 @@
             inputValidated = false;
 
             result.style.display = "block";
+
             result.className = "result error";
+
             result.innerText =
                 "Input cannot be empty.";
 
             document.getElementById("inputStatus").innerText =
                 "Invalid input";
 
-            addLog("Input validation failed.");
+            addLog(
+                "Input validation failed."
+            );
 
             return;
         }
 
 
         // Allow letters, numbers and underscore
-        const validPattern = /^[A-Za-z0-9_]{3,20}$/;
+        const validPattern =
+            /^[A-Za-z0-9_]{3,20}$/;
 
 
         if (!validPattern.test(username)) {
@@ -493,58 +611,75 @@
             inputValidated = false;
 
             result.style.display = "block";
+
             result.className = "result warning";
+
             result.innerText =
                 "Invalid input. Use 3-20 letters, numbers or underscore.";
 
             document.getElementById("inputStatus").innerText =
                 "Invalid input";
 
-            addLog("Rejected invalid user input.");
+            addLog(
+                "Rejected invalid user input."
+            );
 
         } else {
 
             inputValidated = true;
 
             result.style.display = "block";
+
             result.className = "result success";
+
             result.innerText =
                 "Input is valid.";
 
             document.getElementById("inputStatus").innerText =
                 "Input validated";
 
-            addLog("Input validation successful.");
+            addLog(
+                "Input validation successful."
+            );
         }
     }
 
 
-    // Security checks
+    // Security Checks
     function runSecurityChecks() {
 
         const result =
             document.getElementById("securityResult");
 
 
-        if (authenticated && inputValidated) {
+        if (
+            authenticated &&
+            inputValidated
+        ) {
 
             result.style.display = "block";
+
             result.className = "result success";
 
             result.innerText =
                 "Security checks passed: authentication and input validation are successful.";
 
-            addLog("Security checks passed.");
+            addLog(
+                "Security checks passed."
+            );
 
         } else {
 
             result.style.display = "block";
+
             result.className = "result warning";
 
             result.innerText =
                 "Security checks incomplete. Complete authentication and input validation.";
 
-            addLog("Security checks reported incomplete.");
+            addLog(
+                "Security checks reported incomplete."
+            );
         }
     }
 
